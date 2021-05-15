@@ -1,6 +1,6 @@
 #!/bin/bash
 # This script make a curl request to server that will update
-# the IP of a server within a HAProxy backedn.
+# the IP of a server within a HAProxy backend.
 #
 # Don't forget to add this script in a crontab, like : 
 # */5 * * * * bash /usr/local/share/marsdns.sh
