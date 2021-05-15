@@ -17,8 +17,8 @@ PASSWORD=""
 NAME=""
 
 # Optional settings (default are good)
-# Where to write the log file. Default is /var/log/marsdns-client.log
-LOGFILE="/var/log/${0%%.*}.log"
+# Where to write the log file. Default is /var/log/marsdns.log
+LOGFILE="/var/log/$(basename -- "${0%%.*}").log"
 # Date format. Default correspond to : 2021-05-15T15:54:47+02:00
 DATE=`date --iso-8601=seconds`
 
