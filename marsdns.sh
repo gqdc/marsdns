@@ -3,9 +3,9 @@
 # the IP of a server within a HAProxy backend.
 #
 # Don't forget to add this script in a crontab, like : 
-# */5 * * * * bash /usr/local/share/marsdns.sh
+# */5 * * * * bash /usr/local/share/marsdns-client.sh
 #
-# git : https://github.com/gqdc/marsdns
+# git : https://github.com/gqdc/marsdns-client
 
 # Please define these settings
 # URL to the haproxy update sscript, i.e : https://url_to_haproxy_update_script/
@@ -17,7 +17,7 @@ PASSWORD=""
 NAME=""
 
 # Optional settings (default are good)
-# Where to write the log file. Default is /var/log/marsdns.log
+# Where to write the log file. Default is /var/log/marsdns-client.log
 LOGFILE="/var/log/${0%%.*}.log"
 # Date format. Default correspond to : 2021-05-15T15:54:47+02:00
 DATE=`date --iso-8601=seconds`
